@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color:#FFFFFF;
+  }
+  
+  .navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color: rgb(17, 17, 17);
+    margin: 10px;
+    
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    padding-right: 30px;
+    font-weight:rgb(0,0,0);
+    
+  }
+  nav.itme{
+    color: black;
+  }
+  
+  span1{
+      color:#F83002;
+  }
+  
+  span2{
+      color:#4c02f8;
+  }
+  span3{
+      color:#f33409;
+  }
+  span4{
+      color:#f50ed6;
+  }
+  span5{
+      color:#06f72e;
+  }
+  span6{
+      color:#8608fc;
+  }
+  span7{
+      color:#fc6108;
+  }
+  span8{
+      color:#18fc04;
+  }
+  span9{
+      color:#02a1fd;
+  }
+  span10{
+      color:#df2020;
+  }
+  span11{
+      color:#fc07e7;
+  }
+  span12{
+    color:#F83002;
+    font-weight:medium;
+    margin:mx-auto;
+    padding:8px 16px;
+    background-color:#F3F4F6;
+    border-radius: 20px;
+  }
+  span13{
+    color:#6A38C2;
+  }
+  span14{
+    color: black;
+  }
+  span15{
+    color: black;
+  }
+  span16{
+    color: black;
+  }
+  span17 {
+    color:#6A38C2;
+    margin: 25px;
+    font-weight:bold;
+  }
+  span18{
+    color:#020817;
+    font-weight:bold;
+    
+  }
+  span19 {
+    color:#020817;
+    margin: 25px;
+    
+  }
+  span20{
+    font-size:medium;
+    font-weight:bold;
+  }
+  span21{
+    font-size:small;
+  }
+  span22{
+      color:#0a0a0a;
+  }
+  span23{
+      color:#fd0202;
+  }
+  span24{
+      color:#fc05be;
+  }
+  span25{
+      color:#610dfd;
+  }
+  span26{
+      color:#df2020;
+  }
+  span27{
+      color:#fd0505;
+  }
+  span28{
+      color:#fd6005;
+  }
+
+
+  span29{
+    color: #0a0a0a;
+  }
+  span30{
+    color: #f8078b;
+  }
+  span31{
+    color: #0b07f8;
+  }
+  
+  h4{
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  }
+
+  .purple-button {
+      background-color: #5B30A6;
+      color: white; /* White text color for contrast */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .purple-button:hover {
+      background-color: #4a248a; /* Darker shade for hover effect */
+    }
+    
+    .light-button {
+      background-color: white; 
+      color: #333; /* Darker text color for contrast */
+      padding: 10px 20px;
+      border: 1px solid #ccc; /* Light border */
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    
+    .light-button:hover {
+      background-color: #e0e0e0; /* Slightly darker gray on hover */
+      border-color: #bbb; /* Darker border on hover */
+    }
+  
+    /* Set a style for the submit button */
+  .btn{
+    color: white;
+    padding: 16px 20px;
+    margin: 5px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .singupbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: rgb(26, 10, 252);
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: left;
+    font-size: medium;
+  }
+  
+  
+  
+  .ser{
+  font-weight: bold;
+  font-size: 5xl; 
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center;     /* Align items vertically in the center */
+    padding: 10px;           /* Add some space inside the container */
+   border: #bbb;
+    border-radius: 15px;      /* Round the corners */
+   
+  }
+  
+  .search-container input[type="text"] {
+    padding: 8px;
+    margin-right:-3px;
+   
+    border-radius: 20px;
+    width: 500px;  /* Control the width of the search input */
+  }
+  
+  .search-container button {
+    padding: 8px 16px;
+    background-color: #6A38C2;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color:#272E3F;
+  }
+  
+  /* Container for the scrollable content */
+  
+  .scroll-container {
+        display: flex;
+        align-items: center;
+        width: 800px;
+        overflow: hidden;
+        margin-top:-60px;
+        position: relative;
+      }
+  
+      /* Scrollable content area */
+      .scroll-content {
+        display: flex;
+        transition: transform 0.10s ease-in-out;
+      
+      }
+  
+      /* Individual items inside the scrollable content */
+      .scroll-item {
+        min-width: 250px;
+        height: 50px;
+        background-color:#F1F5F9;
+        
+        line-height: 50px;
+        font-size: 15px;
+       margin: 50px 60px;
+        border-radius: 100px;
+        justify-content: space-between;
+      }
+  
+      /* Active state for scroll items */
+      .scroll-item.active {
+        transform: scale(1.05); /* Slightly enlarge the active item */
+       /* Highlight active item */
+      }
+      /* Pill button styles */
+      .pill-button {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 2px;
+        background-color:#FFFFFF;
+        color: black;
+        font-size: 16px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+        white-space: nowrap;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+  
+      .pill-button.left {
+        left: 10px;
+      }
+  
+      .pill-button.right {
+        right: 10px;
+      }
+  
+      .pill-button:hover {
+        background-color:#F1F5F9;
+      }
+  
+      /* Arrow Styles */
+      .arrow {
+        font-size: 24px;
+        margin: 0 8px;
+      }
+  
+  footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color:#E4E7EA;
+  height: 90px;
+  }
+  .social-icons {
+  display: flex;
+  gap: 2rem; /* Evenly space the social media icons */
+  }
+  .social-icons a img {
+  width: 30px; /* Size of the icons */
+  height: 30px;
+  gap: 2rem; /* Evenly space the social media icons */
+  }
+
+  .sr{
+padding-left: 30px;
+font-weight: bold;
+  }
+  .fb{
+    padding-left: 30px;
+      }
+  
+.Profile{
+  padding-right:0px;
+}
+
+
+/* Add padding to containers */
+.container {
+  padding: 5px;
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f1f1;
+  height: 50%;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 2px solid #E2E8F0;
+  margin-bottom: 15px;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.my{
+  padding: 50px;
+  background-color: white;
+
+}
+.found{
+  
+  color:#020817;
+  padding-left: 250px;
+}
+.containers{
+  align-content:space-between;
+  padding-right: 45px;
+ 
+
+}
